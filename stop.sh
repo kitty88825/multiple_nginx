@@ -1,0 +1,12 @@
+cd reverse_proxy
+docker-compose down
+cd ..
+cd project_one
+docker-compose down
+cd ..
+cd project_two
+docker-compose down
+cd ..
+cd project_three
+docker-compose down
+cd ..

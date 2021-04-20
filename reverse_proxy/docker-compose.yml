@@ -1,0 +1,21 @@
+version: "3"
+services:
+  service:
+    build: ./
+    networks:
+      - project_one
+      - project_two
+      - project_three
+    ports:
+      - 80:80
+
+networks:
+  project_one:
+    external:
+      name: project_one_default
+  project_two:
+    external:
+      name: project_two_default
+  project_three:
+    external:
+      name: project_three_default
